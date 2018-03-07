@@ -1,21 +1,28 @@
 {
-    "version" : "",
+    "igPackageRegistry": "https://packages.infragistics.com/npm/js-licensed/",
+    "customTemplates": [
+        "path:G:\\Work\\git\\test\\custom-template"
+    ],
+    "skipGit": false,
+    "version": "",
     "project": {
-		"framework" : "react",
-		"projectType": "es6",
-		"theme": "infragistics",
-		"themePath": "$(themePath)",
-		"cssPath": "$(cssPath)",
-		"jsPath": "$(jsPath)",
-		"isBundle": false,
-		"bundleFilePath": "/igniteui/dist/ignite.js",
-		"igniteuiSource": "./node_modules/ignite-ui",
-        "components": [],
+        "framework": "react",
+        "projectType": "es6",
+        "theme": "infragistics",
+        "themePath": "$(themePath)",
+        "cssPath": "$(cssPath)",
+        "jsPath": "$(jsPath)",
+        "isBundle": false,
+        "bundleFilePath": "/igniteui/dist/ignite.js",
+        "igniteuiSource": "./node_modules/@infragistics/ignite-ui-full/en",
+        "components": [
+            "igGrid",
+            "igCombo"
+        ],
         "isShowcase": false,
-		"version": "",
-		"sourceRoot": "./client"
-	},
-	"build" : {
-
-	}
+        "version": "",
+        "sourceRoot": "./client"
+    },
+    "build": {},
+    "packagesInstalled": true
 }

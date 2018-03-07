@@ -129,8 +129,8 @@ module.exports = {
 	extensions: ['.js', '.jsx'],
 	alias: {
 		// --- Ignite UI resources aliasing. WARNING: auto-updated ---
-		"ignite-ui/js/infragistics.core.js$": "ignite-ui/js/infragistics.core-lite.js",
-		"ignite-ui/js/infragistics.lob.js$": "ignite-ui/js/infragistics.lob-lite.js",
+		//"ignite-ui/js/infragistics.core.js$": "ignite-ui/js/infragistics.core-lite.js",
+		//"ignite-ui/js/infragistics.lob.js$": "ignite-ui/js/infragistics.lob-lite.js",
 		"ignite-ui": config.project.igniteuiSource.split("node_modules/").pop()
 	},
     modules: [
