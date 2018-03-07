@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
-import 'jquery';
-import 'jquery-ui';
+// import 'jquery';
+// import 'jquery-ui';
+import "jquery-ui/ui/widgets/mouse" // ui.igSlider missing dep 
 
 // Ignite UI Required Combined JavaScript Files
-import "ignite-ui/js/infragistics.core.js";
-import "ignite-ui/js/infragistics.lob.js";
+// import "ignite-ui/js/infragistics.core.js";
+// import "ignite-ui/js/infragistics.lob.js";
+
+import "ignite-ui/js/modules/infragistics.ui.grid.framework";
 
 import IgGrid from "igniteui-react/ui/igGrid.js";
 
