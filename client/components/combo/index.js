@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import 'jquery';
-import 'jquery-ui';
+// import 'jquery';
+// import 'jquery-ui';
 
 // Ignite UI Required Combined JavaScript Files
-import "ignite-ui/js/infragistics.core.js";
-import "ignite-ui/js/infragistics.lob.js";
+// import "ignite-ui/js/infragistics.core.js";
+import "ignite-ui/js/modules/infragistics.ui.combo";
 
 import IgCombo from "igniteui-react/ui/igCombo.js";
 
