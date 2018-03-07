@@ -28,6 +28,9 @@ const plugins = [
     production: isProd,
     inject: true,
   }),
+  new webpack.ProvidePlugin({
+    jQuery: "jquery"
+  })
 ];
 
 const jsEntry = [
@@ -118,6 +121,14 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        /* https://github.com/webpack-contrib/imports-loader
+          Util needs globally-provided jQuery and expects `window` as context.
+          Define disabled to properly inherit `this`
+        */
+        test: require.resolve(`${config.project.igniteuiSource.split("node_modules/").pop()}/js/modules/infragistics.util`),
+        use: "imports-loader?this=>window,define=>false"
       },
       {
         test: /\.(gif|png|jpg|jpeg\ttf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
