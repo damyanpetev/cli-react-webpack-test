@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 // import 'jquery';
 // import 'jquery-ui';
-import "jquery-ui/ui/widgets/mouse" // ui.igSlider missing dep 
+import "jquery-ui/ui/widgets/mouse" // ui.igSlider missing dep
+import "jquery-ui/ui/effects/effect-blind" // Editors missing dep
 
 // Ignite UI Required Combined JavaScript Files
 // import "ignite-ui/js/infragistics.core.js";
 // import "ignite-ui/js/infragistics.lob.js";
 
-import "ignite-ui/js/modules/infragistics.ui.grid.framework";
+import "ignite-ui/js/modules/infragistics.ui.grid.paging";
 
 import IgGrid from "igniteui-react/ui/igGrid.js";
 
@@ -38,7 +39,9 @@ export default class App extends Component {
 					id="grid"
 					width="700px"
 					dataSource={this.state.products}
-					features={[]}
+					features={[
+						{name: "Paging"}
+					]}
 				/>
       </div>
 		);
